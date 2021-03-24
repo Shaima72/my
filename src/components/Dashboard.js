@@ -58,13 +58,12 @@ export default class Dashboard extends Component {
     render() {
         return (
 <div>
-          <div class="about">
           <div class="card header">
           <div class="card-body">
               <h4>Dashboard</h4>
           </div>
       </div>
-      </div>    
+       
 <div className="content-wrapper">
   {/* /.content-header */}
   {/* Main content */}

@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 class Ajout extends Component {
     render() {
         return (
-            <div>
             <div class="container tableMarging containerAjout bg-light">
                 <form>
                     <div class="form-group">
@@ -32,7 +31,6 @@ class Ajout extends Component {
                     </div>
                     <button type="submit" class="btn btn-primary">Enregistrer</button>
                 </form>
-            </div>
             </div>
         )
     }

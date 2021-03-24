@@ -32,7 +32,6 @@ function App() {
         <Route path="/dashboard" component={Dashboard}></Route>
         <Route path="/about" component={About} ></Route>
         <Workflow></Workflow>
-        <Table></Table>
         </Switch>
         <Footer></Footer>
         

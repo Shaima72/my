@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Ajout from './Ajout' 
+import Ajout from './Ajout'
 import Table from './Table'
 
 class Workflow extends Component {
@@ -99,43 +99,43 @@ class Workflow extends Component {
                     </div>
                 </div>
                 <div class='container'>
+                <div class="table-responsive-sm">
                     <div class='card tableMarging'>
-                    <table class='table'>
-                        <thead>
-                            <tr>
-                                <th>Numéro</th>
-                                <th>Fournisseur</th>
-                                <th>Montant</th>
-                                <th>Date</th>
-                                <th>Statut</th>
-                                <th><button type="button" class="btn btn-success " onClick={this.montrerTableau} >Masquer</button></th>
-                            </tr>
-                        </thead>
-                        {this.state.show ? (
-                            <tbody>
-                                {this.state.elements.map(element => (
-                                    <tr>
-                                        <td>{element.numero}</td>
-                                        <td>{element.fournisseur}</td>
-                                        <td>{element.montant}</td>
-                                        <td>{element.date}</td>
-                                        <td>{element.statut}</td>
-                                        <td><button type="button" class="btn btn-warning " onClick={this.deleteBon.bind(this, element.numero)} >Supprimer</button></td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        ) : null}
-                    </table>
+                        <table class='table responsive-table-line'>
+                            <thead>
+                                <tr>
+                                    <th>Numéro</th>
+                                    <th>Fournisseur</th>
+                                    <th>Montant</th>
+                                    <th>Date</th>
+                                    <th>Statut</th>
+                                    <th><button type="button" class="btn btn-success " onClick={this.montrerTableau} >Masquer</button></th>
+                                </tr>
+                            </thead>
+                            {this.state.show ? (
+                                <tbody>
+                                    {this.state.elements.map(element => (
+                                        <tr>
+                                            <td>{element.numero}</td>
+                                            <td>{element.fournisseur}</td>
+                                            <td>{element.montant}</td>
+                                            <td>{element.date}</td>
+                                            <td>{element.statut}</td>
+                                            <td><button type="button" class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="right" title="Supprimer un bon de commande" onClick={this.deleteBon.bind(this, element.numero)} >Supprimer</button></td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            ) : null}
+                        </table>
                     </div>
-                    
+                    </div>                        
                 </div>
 
-                <button type="button" class="btn btn-success">Ajouter</button>
-
+                <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" title="Ajouter un bon de commande">Ajouter</button>
                 <Ajout></Ajout>
-
-
+                <Table></Table> 
             </div>
+            
         )
     }
 }

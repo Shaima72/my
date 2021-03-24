@@ -14,12 +14,12 @@ class Header extends Component {
                             <Link to="/"><li class="nav-item active">
                                 <a class="nav-link" href="#">Accueil</a>
                             </li></Link>
-                            <Link to="/Dashboard"><li class="nav-item">
-                                <a class="nav-link">Dashboard</a>
-                            </li></Link><Link to="/About"><li class="nav-item">
+                            <Link to="/About"><li class="nav-item">
                                 <a class="nav-link">A propos</a>
                             </li></Link>
-
+                            <Link to="/Dashboard"><li class="nav-item">
+                                <a class="nav-link">Dashboard</a>
+                            </li></Link>
                         </ul>
                     </div>
                 </nav>
